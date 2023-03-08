@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7550EFCE29B87BA300E991F7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550EFCD29B87BA300E991F7 /* Color.swift */; };
 		757E0D1129B8772800628C9D /* MyCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E0D1029B8772800628C9D /* MyCryptoApp.swift */; };
 		757E0D1329B8772800628C9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757E0D1229B8772800628C9D /* ContentView.swift */; };
 		757E0D1829B8772A00628C9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757E0D1729B8772A00628C9D /* Preview Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7550EFCD29B87BA300E991F7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		757E0D0D29B8772800628C9D /* MyCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757E0D1029B8772800628C9D /* MyCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCryptoApp.swift; sourceTree = "<group>"; };
 		757E0D1229B8772800628C9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7550EFCC29B87B8400E991F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7550EFCD29B87BA300E991F7 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		757E0D0429B8772800628C9D = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		757E0D0F29B8772800628C9D /* MyCrypto */ = {
 			isa = PBXGroup;
 			children = (
+				7550EFCC29B87B8400E991F7 /* Extensions */,
 				757E0D1029B8772800628C9D /* MyCryptoApp.swift */,
 				757E0D1229B8772800628C9D /* ContentView.swift */,
 				757E0D4529B878CC00628C9D /* Assets.xcassets */,
@@ -139,6 +150,7 @@
 			files = (
 				757E0D1329B8772800628C9D /* ContentView.swift in Sources */,
 				757E0D1129B8772800628C9D /* MyCryptoApp.swift in Sources */,
+				7550EFCE29B87BA300E991F7 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
