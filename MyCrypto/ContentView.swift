@@ -17,8 +17,8 @@ struct ContentView: View {
                 Text("accent")
                     .foregroundColor(Color.theme.accent)
                 
-                Text("SecondaryText")
-                    .foregroundColor(Color.theme.SecondaryText)
+                Text("secondaryText")
+                    .foregroundColor(Color.theme.secondaryText)
                 
                 Text("red")
                     .foregroundColor(Color.theme.red)
