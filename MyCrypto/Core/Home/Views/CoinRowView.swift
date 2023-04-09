@@ -42,7 +42,7 @@ extension CoinRowView {
         HStack(spacing: 0) {
             Text("\(coin.runk)")
                 .font(.caption)
-                .foregroundColor(Color.theme.secondaryText)
+                .foregroundColor(Color.theme.accent)
                 .frame(minWidth: 30)
             Circle()
                 .frame(width: 30, height: 30)

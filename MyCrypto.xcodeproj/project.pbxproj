@@ -19,6 +19,7 @@
 		75C5833629E0399A006D3265 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5833529E0399A006D3265 /* CoinRowView.swift */; };
 		75C5833829E03AA0006D3265 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5833729E03AA0006D3265 /* PreviewProvider.swift */; };
 		75C5833A29E049AF006D3265 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5833929E049AF006D3265 /* Double.swift */; };
+		75C5833C29E2B502006D3265 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C5833B29E2B502006D3265 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		75C5833529E0399A006D3265 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		75C5833729E03AA0006D3265 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		75C5833929E049AF006D3265 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		75C5833B29E2B502006D3265 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		7507E1E929D046FA003F73C8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				75C5833B29E2B502006D3265 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C5833629E0399A006D3265 /* CoinRowView.swift in Sources */,
+				75C5833C29E2B502006D3265 /* HomeViewModel.swift in Sources */,
 				757E0D1329B8772800628C9D /* ContentView.swift in Sources */,
 				7507E1EB29D0472E003F73C8 /* HomeView.swift in Sources */,
 				757E0D1129B8772800628C9D /* MyCryptoApp.swift in Sources */,
@@ -371,6 +375,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,6 +405,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
