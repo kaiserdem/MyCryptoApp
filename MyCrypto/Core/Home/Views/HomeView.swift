@@ -21,7 +21,7 @@ struct HomeView: View {
             // content leyer
             VStack {
                 homeHeader
-                
+                SearchBarView(searchText: $vm.searchText)
                 columnTitles
                 
                 if !shadowPortfolio {
