@@ -10,26 +10,31 @@ import SwiftUI
 struct HomeView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
-    @State private var shadowPortfolio: Bool = false
-    
+    @State private var showPortfolio: Bool = false
+    @State private var showPortfolioView: Bool = false
+
     var body: some View {
         ZStack {
             // background layer
             Color.theme.background
                 .ignoresSafeArea()
+                .sheet(isPresented: $showPortfolioView, content:  {
+                    PortfolioView()
+                        .environmentObject(vm)
+                })
             
             // content leyer
             VStack {
                 homeHeader
-                HomeStatsView(showPortfolio: $shadowPortfolio)
+                HomeStatsView(showPortfolio: $showPortfolio)
                 SearchBarView(searchText: $vm.searchText)
                 columnTitles
                 
-                if !shadowPortfolio {
+                if !showPortfolio {
                  allCoinsList
                     .transition(.move(edge: .leading))
                 }
-                if shadowPortfolio {
+                if showPortfolio {
                     portfolioCoinsList
                         .transition(.move(edge: .trailing))
                 }
@@ -54,23 +59,28 @@ extension HomeView {
     
     private var homeHeader: some View {
         HStack {
-            CircleButtonView(iconName: shadowPortfolio ? "plus" : "info")
+            CircleButtonView(iconName: showPortfolio ? "plus" : "info")
                 .animation(.none)
+                .onTapGesture {
+                    if showPortfolio {
+                        showPortfolioView.toggle()
+                    }
+                }
                 .background(
-                    CircleButtonAnimationView(animate: $shadowPortfolio)
+                    CircleButtonAnimationView(animate: $showPortfolio)
                 )
             Spacer()
-            Text(shadowPortfolio ? "Prices" : "Live Prices")
+            Text(showPortfolio ? "Prices" : "Live Prices")
                 .font(.headline)
                 .fontWeight(.heavy)
                 .foregroundColor(Color.theme.accent)
                 .animation(.none)
             Spacer()
             CircleButtonView(iconName: "chevron.right")
-                .rotationEffect(Angle(degrees: shadowPortfolio ? 180 : 0))
+                .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
                 .onTapGesture {
                     withAnimation(.spring()) {
-                        shadowPortfolio.toggle()
+                        showPortfolio.toggle()
                     }
                 }
         }
@@ -101,7 +111,7 @@ extension HomeView {
         HStack {
             Text("Coin")
             Spacer()
-            if shadowPortfolio {
+            if showPortfolio {
                 Text("Holdigs")
             }
             Text("Prices")
