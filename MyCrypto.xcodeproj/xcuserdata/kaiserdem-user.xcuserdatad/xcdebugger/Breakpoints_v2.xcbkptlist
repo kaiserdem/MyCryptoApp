@@ -3,4 +3,54 @@
    uuid = "1D30A6B8-1EBD-4428-9287-FF78E527B95E"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D7B5EE3-BBE3-4C37-A679-90F2C24BD911"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCrypto/Core/Components/XMarkButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "4D7B5EE3-BBE3-4C37-A679-90F2C24BD911 - a43c95fdd0a222ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MyCrypto.XMarkButton.body.getter : some"
+                  moduleName = "MyCrypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaiserdem-user/Desktop/SwiftUI/MyCrypto/MyCrypto/Core/Components/XMarkButton.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "4D7B5EE3-BBE3-4C37-A679-90F2C24BD911 - a085b84420898683"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.font(Swift.Optional&lt;SwiftUI.Font&gt;) -&gt; some&gt;&gt;.0 in MyCrypto.XMarkButton.body.getter : some"
+                  moduleName = "MyCrypto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kaiserdem-user/Desktop/SwiftUI/MyCrypto/MyCrypto/Core/Components/XMarkButton.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

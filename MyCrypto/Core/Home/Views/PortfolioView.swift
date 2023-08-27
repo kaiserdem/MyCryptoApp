@@ -35,7 +35,11 @@ struct PortfolioView: View {
                     tralingNavBurButton
                 }
             }
-
+            .onChange(of: vm.searchText) { value in
+                if value == "" {
+                    removeSelectedCoin()
+                }
+            }
         }
     }
 }
@@ -48,7 +52,6 @@ struct PortfolioView_Previews: PreviewProvider {
 }
 
 extension PortfolioView {
-    
     
     private var coinLogoList: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -112,22 +115,22 @@ extension PortfolioView {
             Image(systemName: "checkmark")
                 .opacity(showCheckmark ? 1.0 : 0.0)
             Button {
-                
+                saveButtonPressed()
             } label: {
                 Text("Save".uppercased())
             }
             .opacity(
-                (selectedCoin != nil && selectedCoin?.currentPrice != Double(quantityText)) ? 1.0 : 0.0
+                (selectedCoin != nil && selectedCoin?.currentHoldings != Double(quantityText)) ? 1.0 : 0.0
             )
         }
         .font(.headline)
     }
     
     private func saveButtonPressed() {
-        guard let coin = selectedCoin else { return }
+        guard let coin = selectedCoin, let amount = Double(quantityText) else { return }
         
         // save to portfolio
-        
+        vm.updatePortfolio(coin: coin, amount: amount)
         
         
         // show checkmark
